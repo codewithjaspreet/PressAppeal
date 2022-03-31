@@ -1,23 +1,21 @@
-import 'package:PressAppeal/views/home.dart';
 import 'package:flutter/material.dart';
+import 'package:pressappeal/views/homePage.dart';
 
-import 'home.dart';
+import 'views/homePage.dart';
 
 void main() => runApp(MyApp());
-const primaryColor = Colors.white;
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
+      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: Home(),
+      home: HomePage(),
     );
   }
 }
