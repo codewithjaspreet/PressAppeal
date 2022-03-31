@@ -10,8 +10,8 @@ class News {
   Future<void> getNews() async {
     String url =
         "http://newsapi.org/v2/top-headlines?country=in&excludeDomains=stackoverflow.com&sortBy=publishedAt&language=en&apiKey=${apiKey}";
-
-    var response = await http.get(url);
+    var ans = Uri.parse(url);
+    var response = await http.post(ans);
 
     var jsonData = jsonDecode(response.body);
 
@@ -42,7 +42,8 @@ class NewsForCategorie {
     String url =
         "http://newsapi.org/v2/top-headlines?country=in&category=$category&apiKey=${apiKey}";
 
-    var response = await http.get(url);
+    var ans = await Uri.parse(url);
+    var response = await http.post(ans);
 
     var jsonData = jsonDecode(response.body);
 

@@ -1,4 +1,4 @@
-import 'package:cache_image/cache_image.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:pressappeal/helper/data.dart';
 import 'package:pressappeal/helper/widgets.dart';
@@ -40,7 +40,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: AppBar(
+          title: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            "Flutter",
+            style:
+                TextStyle(color: Colors.black87, fontWeight: FontWeight.w600),
+          ),
+          Text(
+            "News",
+            style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w600),
+          )
+        ],
+      )),
       body: SafeArea(
         child: _loading
             ? Center(
