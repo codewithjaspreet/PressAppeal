@@ -1,22 +1,23 @@
 import 'package:pressappeal/models/categorie_model.dart';
 
+import '../models/categorie_model.dart';
+
 List<CategorieModel> getCategories() {
   List<CategorieModel> myCategories = List.empty(growable: true);
   CategorieModel categorieModel;
 
   //1
-  categorieModel = CategorieModel();
+  categorieModel = new CategorieModel();
   categorieModel.categorieName = "Business";
   categorieModel.imageAssetUrl =
-      "https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
-
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80";
   myCategories.add(categorieModel);
 
   //2
   categorieModel = new CategorieModel();
   categorieModel.categorieName = "Entertainment";
   categorieModel.imageAssetUrl =
-      "https://images.unsplash.com/photo-1542889601-399c4f3a8402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
+      "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80";
   myCategories.add(categorieModel);
 
   //3
